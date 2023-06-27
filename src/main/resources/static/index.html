@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>MyActor</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <style>
+        form {
+            padding-left: 50px;
+            padding-top: 50px;
+            width: 500px;
+            height: 250px;
+            border-width: medium;
+            border-color: black;
+            border-style: dot-dash;
+        }
+    </style>
+</head>
+<body>
+
+<form action="/guessMyFavoriteActor" method="GET" id="formGuessMyFavoriteActor">
+    <div>
+        <h1>Guess My Favorite Actor</h1>
+        <h2>!!! and you'll win a free move ticket !!!</h2>
+        <label for="guessNameInput">What Is My Favorite Actors' First Name?</label><br><br>
+        <input type="text" name="guessActorName" id="guessNameInput" autocomplete="off" required><br><br>
+        <button>Guess!</button>
+    </div>
+</form>
+
+<form action="/guessMyFavoriteActor/clue" method="GET" id="formGuessMyFavoriteActorClue">
+    <div>
+        <h1>Not Sure?? .. Get A Clue!</h1>
+        <label for="clueNumber">You Only Get x3 Clues:</label><br><br>
+<!--        <input name="guessActorName" id="getClue"><br><br>-->
+        <select name="clueNumber" id="clueNumber" required>
+            <option value="1">First Clue</option>
+            <option value="2">Second Clue</option>
+            <option value="3">Third Clue</option>
+        </select>
+        <button>Get My Clue!</button>
+    </div>
+</form>
+
+
+</body>
+</html>
