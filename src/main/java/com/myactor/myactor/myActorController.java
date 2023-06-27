@@ -13,8 +13,8 @@ public class myActorController {
     @Autowired
     private MyActorApplication MyActor;
 
-    @GetMapping("/{actorName}")
-    public getMyActorClue read(@PathVariable String actorName){
-        return MyActor.guessMyFavoriteActorClue(actorName);
-    }
+//    @GetMapping("/{actorName}")
+//    public getMyActorClue read(@PathVariable String actorName){
+//        return MyActor.guessMyFavoriteActorClue(actorName);
+//    }
 }
